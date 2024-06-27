@@ -22,6 +22,10 @@ echo
   printer "- Developer : @Henpeex"
   echo 
   echo 
+  sleep 1
+  printer " Silahkan cek notifikasi anda apakah remove berhasil "
+  echo && sleep 1
+  echo 
   settings_output() {
     local dalvik=1
     settings delete global disable_window_blurs
