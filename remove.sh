@@ -36,7 +36,7 @@ echo
     settings delete secure adaptive_connectivity_enabled
   }
   settings_output > /dev/null 2>&1
-  
+  sleep 4
   adaptive_sensivity() {
     wm size reset
     wm density reset
