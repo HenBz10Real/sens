@@ -5,7 +5,7 @@ text="$1"
  i=0
    while [ $i -lt ${#text} ]; do
      echo -en "\e[${color}m${text:$i:1}\e[0m"
- sleep 0.02
+ sleep 0.03
    i=$((i + 1))
  done
 echo
@@ -23,7 +23,7 @@ echo
   echo 
   echo 
   sleep 1
-  printer " Silahkan cek notifikasi anda apakah remove berhasil "
+  printer "Silahkan cek notifikasi anda apakah remove berhasil "
   echo && sleep 1
   echo 
   settings_output() {
