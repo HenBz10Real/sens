@@ -106,7 +106,7 @@ else
   echo ""
   sleep 0.6
   echo
-  echo "Invalid device, ${RED} file rusak ( buy to original script )"
+  echo "Invalid device, ${RED}file rusak ( buy to original script )"
   sleep 0.6
   sleep 3
   echo
