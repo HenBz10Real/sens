@@ -85,7 +85,7 @@ if [ $check_vip = true ]; then
   sleep 0.2
   optimazion_freefire() {
     internal="/storage/emulated/0/"
-    cmd notification post -S bigtext -t 'SENSIXPRO+' 'Tag' 'Sensix Crazy berhasil terpasang😈'
+    cmd notification post -S bigtext -t 'SENSIXPRO+' 'Tag' 'Crazy Active🤩'
     pm disable --user 0 com.google.android.gms/com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
     pm disable --user 0 com.google.android.gms/com.google.android.gms.mdm.receivers.MdmDeviceAdminReceiver
     dumpsys deviceidle whitelist -com.google.android.gms
