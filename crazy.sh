@@ -32,6 +32,8 @@ if [ $check_vip = true ]; then
   echo
   echo "Silahkan cek notifikasi anda, ${RED}berhasil terpasang"
   sleep 0.6
+  echo 
+  echo 
   sensivity_calibrar() {
     local coordinate=$1
     local sensivity_value=$2
@@ -106,6 +108,8 @@ else
   echo
   echo "Invalid device, ${RED} file rusak ( buy to original script )"
   sleep 0.6
-  sleep 2
+  sleep 3
+  echo
+  echo
   am start -a android.intent.action.VIEW -d ${link} > /dev/null 2>&1
 fi
