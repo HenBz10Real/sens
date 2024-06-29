@@ -83,6 +83,10 @@ if [ $check_vip = true ]; then
     find "$internal" -iname "*dat" -exec rm -rf {} \;
     rm -rf "$internal"Android/data/com.dts.freefireth/files/ImageCache/*
     rm -rf "$internal"Android/data/com.dts.freefiremax/files/ImageCache/*
+    device_config delete interaction_jank_monitor trace_buffer_size 
+    device_config delete interaction_jank_monitor animation_frame_duration_ms 
+    device_config delete interaction_jank_monitor trace_enabled 
+    device_config delete interaction_jank_monitor animation_frame_duration 
   }
   optimazion_freefire > /dev/null 2>&1
   
