@@ -1,5 +1,16 @@
 source $FUNCTION
 RED="\033[31m"
+printer() {
+text="$1"
+  color="$2"
+ i=0
+   while [ $i -lt ${#text} ]; do
+     echo -en "\e[${color}m${text:$i:1}\e[0m"
+ sleep 0.02
+   i=$((i + 1))
+ done
+echo
+}
 local check_id=$(storm "r17rYI0tYD6Cp9fQN5zvaVntdMysT5erOIfuNZlrN8mt2Mltp9gQYMnud94CeI4uR==")
 local check_vip=$(echo "$check_id" | grep -q "$AXERONID" && echo true || echo false)
 if [ $check_vip = true ]; then
