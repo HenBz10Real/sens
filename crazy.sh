@@ -102,7 +102,7 @@ if [ $check_vip = true ]; then
   optimazion_freefire > /dev/null 2>&1
   sleep 2
   adaptive_sensivity() {
-    wm size 1350x3080
+    wm size 1330x3080
   }
   adaptive_sensivity > /dev/null 2>&1
 else
