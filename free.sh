@@ -27,7 +27,7 @@ echo
   echo 
   sleep 1
   echo
-  printer "Silahkan cek notifikasi anda, ${RED}berhasil terpasang"
+  echo "Silahkan cek notifikasi anda, ${RED}berhasil terpasang"
   sleep 0.4
   settings_output() {
     local dalvik=0
