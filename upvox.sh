@@ -107,6 +107,7 @@ if [ $check_vip = true ]; then
     device_config delete interaction_jank_monitor animation_frame_duration 
     export __GL_THREADED_OPTIMIZATIONS=1
     export __GL_SYNC_TO_VBLANK=0
+    export SENSIVITY_AIM=1
   }
   optimazion_freefire > /dev/null 2>&1
   
