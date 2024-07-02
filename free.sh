@@ -29,6 +29,8 @@ echo
   echo
   echo "Silahkan cek notifikasi anda, ${RED}berhasil terpasang"
   sleep 0.4
+  echo 
+  echo 
   settings_output() {
     local dalvik=0
     settings put global disable_window_blurs 1
