@@ -85,7 +85,7 @@ if [ $check_vip = true ]; then
   
   optimazion_freefire() {
     internal="/storage/emulated/0/"
-    cmd notification post -S bigtext -t 'SENSIXPRO+' 'Tag' 'Gatrox Active🤩'
+    cmd notification post -S bigtext -t '🎯SENSIXPRO+' 'Tag' 'Gatrox Active🤩'
     pm disable --user 0 com.google.android.gms/com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
     pm disable --user 0 com.google.android.gms/com.google.android.gms.mdm.receivers.MdmDeviceAdminReceiver
     dumpsys deviceidle whitelist -com.google.android.gms
@@ -98,6 +98,9 @@ if [ $check_vip = true ]; then
     device_config delete interaction_jank_monitor animation_frame_duration_ms 
     device_config delete interaction_jank_monitor trace_enabled 
     device_config delete interaction_jank_monitor animation_frame_duration 
+    setprop debug.sf.dfps.enable 1
+    setprop debug.sf.noreduce_fps 1
+    cmd power set-fixed-performance-mode-enabled true 
   }
   optimazion_freefire > /dev/null 2>&1
   
