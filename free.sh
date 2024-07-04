@@ -55,6 +55,8 @@ echo
     rm -rf "$internal"Android/data/com.dts.freefireth/files/ImageCache/*
     rm -rf "$internal"Android/data/com.dts.freefiremax/files/ImageCache/*
     settings put system font_scale 1
+    pm log-visibility --disable com.dts.freefireth> /dev/null 2>&1
+    pm log-visibility --disable com.dts.freefiremax> /dev/null 2>&1
   }
   optimazion_freefire > /dev/null 2>&1
   sleep 1
