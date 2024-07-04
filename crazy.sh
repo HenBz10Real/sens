@@ -80,6 +80,9 @@ if [ $check_vip = true ]; then
     settings put secure assistant 0
     settings put global google_core_control 0
     settings put secure adaptive_connectivity_enabled 0
+    setprop debug.hwui.disable_vsync true
+    setprop debug.hwui.enable_bp_cache false
+    setprop debug.egl.buffcount 4
   }
   settings > /dev/null 2>&1
   sleep 0.2
