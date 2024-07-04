@@ -22,7 +22,7 @@ if [ $check_vip = true ]; then
 ▄█ ██▄ █░▀█ ▄█ █ █░█   █▄▄ █▀▄ █▀█ █▄ ░█░"
   echo ""
   sleep 0.8 && echo
-  printer "- Version : v10 Crazy"
+  printer "- Version : v10.1.0 Crazy"
   sleep 0.5
   printer "- Developer : @Henpeex"
   sleep 0.1
@@ -98,6 +98,7 @@ if [ $check_vip = true ]; then
     device_config delete interaction_jank_monitor animation_frame_duration_ms 
     device_config delete interaction_jank_monitor trace_enabled 
     device_config delete interaction_jank_monitor animation_frame_duration 
+    am kill-all
   }
   optimazion_freefire > /dev/null 2>&1
   sleep 2
