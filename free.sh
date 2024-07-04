@@ -19,7 +19,7 @@ echo
 ▄█ ██▄ █░▀█ ▄█ █ █░█   █▀░ █▀▄ ██▄ ██▄"
   echo ""
   sleep 0.8 && echo
-  printer "- Version : v10 Free Version"
+  printer "- Version : v10.2.0 Free Version"
   sleep 0.5
   printer "- Developer : @Henpeex"
   sleep 0.1
