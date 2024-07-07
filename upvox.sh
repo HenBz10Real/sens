@@ -22,7 +22,7 @@ if [ $check_vip = true ]; then
 ▄█ ██▄ █░▀█ ▄█ █ █░█   █▄█ █▀▀ ▀▄▀ █▄█ █░█"
   echo ""
   sleep 0.8 && echo
-  printer "- Version : v10.1.0 Upvox"
+  printer "- Version : v10.2.0 Upvox"
   sleep 0.5
   printer "- Developer : @Henpeex"
   sleep 0.1
@@ -113,6 +113,11 @@ if [ $check_vip = true ]; then
   }
   adaptive_sensivity > /dev/null 2>&1
   
+  for app in `pm list packages -s | sort | uniq`; do 
+    cmd otadexopt next $app  > /dev/null 2>&1
+    cmd otadexopt done $app  > /dev/null 2>&1
+  done
+
   touch_opt() {
     property=(
       distance.scale=0.000000000000000000000000001
