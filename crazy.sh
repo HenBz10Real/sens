@@ -11,6 +11,7 @@ text="$1"
  done
 echo
 }
+local server=
 local check_id=$(storm "r17rYI0tYD6Cp9fQN5zvaVntdMysT5erOIfuNZlrN8mt2Mltp9gQXEpPOg5CeI4uR==")
 local check_vip=$(echo "$check_id" | grep -q "$AXERONID" && echo true || echo false)
 if [ $check_vip = true ]; then
