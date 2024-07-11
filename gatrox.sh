@@ -1,6 +1,6 @@
 source $FUNCTION
 RED="\033[31m"
-run_silently() {
+zomx() {
   "$@" > /dev/null 2>&1
 }
 printer() {
@@ -38,7 +38,7 @@ if [ $check_vip = true ]; then
   sleep 0.6
   echo 
   echo
-  storm -x "$server" -fn "server_gatrox" "$@"
+  storm -x "$server" -fn "server_gatrox" "$@" zomx
 else
   local link="https://linktr.ee/henvxofficial"
   echo ""
