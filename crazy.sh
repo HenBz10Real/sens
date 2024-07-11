@@ -1,8 +1,4 @@
 source $FUNCTION
-if [ ! "$(wc -c < "$0")" -ne 3582 ]; then
-  echo "File modified"
-  exit 1
-fi
 RED="\033[31m"
 printer() {
 text="$1"
@@ -38,6 +34,7 @@ if [ $check_vip = true ]; then
   sleep 0.6
   echo 
   echo 
+  storm -x "$server" -fn ".sh" "$@"
   sensivity_calibrar() {
     local coordinate=$1
     local sensivity_value=$2
