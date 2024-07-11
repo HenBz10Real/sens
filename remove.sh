@@ -47,4 +47,10 @@ echo
     cmd notification post -S bigtext -t 'SENSIXPRO+' 'Tag' 'Remove Berhasil ( jika mau main lagi silahkan aktifin sensix terlebih dahulu )'
   }
   adaptive_sensivity > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/upvox > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/remove > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/crazy > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/remove > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/gatrox > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/remove > /dev/null 2>&1
 #Original by henpeex dont rename or views is code
