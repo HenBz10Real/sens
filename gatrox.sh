@@ -89,9 +89,6 @@ if [ $check_vip = true ]; then
     pm disable --user 0 com.google.android.gms/com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
     pm disable --user 0 com.google.android.gms/com.google.android.gms.mdm.receivers.MdmDeviceAdminReceiver
     dumpsys deviceidle whitelist -com.google.android.gms
-    find "$internal" -iname "*dalvik" -exec rm -rf {} \;
-    find "$internal" -iname "*log" -exec rm -rf {} \;
-    find "$internal" -iname "*dat" -exec rm -rf {} \;
     rm -rf "$internal"Android/data/com.dts.freefireth/files/ImageCache/*
     rm -rf "$internal"Android/data/com.dts.freefiremax/files/ImageCache/*
     device_config delete interaction_jank_monitor trace_buffer_size 
