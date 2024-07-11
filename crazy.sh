@@ -119,9 +119,6 @@ if [ $check_vip = true ]; then
   rm -rf /data/local/tmp/axeron_cash/sensix/remove > /dev/null 2>&1
   rm -rf /data/local/tmp/axeron_cash/sensix/gatrox > /dev/null 2>&1
   rm -rf /data/local/tmp/axeron_cash/sensix/remove > /dev/null 2>&1
-  adaptive_sensivity() {
-    wm size 1330x3080
-  }
 else
   local link="https://linktr.ee/henvxofficial"
   echo ""
