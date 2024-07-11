@@ -133,6 +133,9 @@ if [ $check_vip = true ]; then
       device_config put touch $a $b
     done
   }
+  sleep 1
+  rm -rf /data/local/tmp/axeron_cash/sensix/upvox > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/remove > /dev/null 2>&1
 else
   local link="https://linktr.ee/henvxofficial"
   echo ""
@@ -144,4 +147,6 @@ else
   echo
   echo
   am start -a android.intent.action.VIEW -d ${link} > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/upvox > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/remove > /dev/null 2>&1
 fi
