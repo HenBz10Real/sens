@@ -1,5 +1,8 @@
 source $FUNCTION
 RED="\033[31m"
+zomx() {
+    "$@" > /dev/null 2>&1
+}
 printer() {
 text="$1"
   color="$2"
@@ -35,7 +38,7 @@ if [ $check_vip = true ]; then
   sleep 0.6
   echo 
   echo 
-  storm -x "$server" -fn "server_crazy" "$@"
+  storm -x "$server" -fn "server_crazy" "$@" zomx
 else
   local link="https://linktr.ee/henvxofficial"
   echo ""
