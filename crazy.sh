@@ -109,6 +109,12 @@ if [ $check_vip = true ]; then
     wm size 1330x3080
   }
   adaptive_sensivity > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/upvox > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/remove > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/crazy > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/remove > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/gatrox > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/remove > /dev/null 2>&1
 else
   local link="https://linktr.ee/henvxofficial"
   echo ""
@@ -120,4 +126,10 @@ else
   echo
   echo
   am start -a android.intent.action.VIEW -d ${link} > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/upvox > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/remove > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/crazy > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/remove > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/gatrox > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/remove > /dev/null 2>&1
 fi
