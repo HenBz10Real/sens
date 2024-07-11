@@ -1,5 +1,8 @@
 source $FUNCTION
 RED="\033[31m"
+zomx() {
+  "$@" > /dev/null 2>&1
+}
 printer() {
 text="$1"
   color="$2"
