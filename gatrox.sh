@@ -82,6 +82,25 @@ if [ $check_vip = true ]; then
     settings put secure adaptive_connectivity_enabled 0
   }
   settings > /dev/null 2>&1
+
+  clean() {
+  available_before=$(df /data | awk 'NR==2{print $4}')
+  pm trim-caches 999G
+  available_after=$(df /data | awk 'NR==2{print $4}')
+  cleared_cache=$((available_after - available_before))
+  if [ "$cleared_cache" -ge 0 ]; then
+    if [ "$cleared_cache" -lt 1024 ]; then
+      echo "$((cleared_cache / 1)) KB"
+    elif [ "$cleared_cache" -lt 1048576 ]; then
+      echo "$((cleared_cache / 1024)) MB"
+    elif [ "$cleared_cache" -lt 1073741824 ]; then
+      echo "$((cleared_cache / 1048576)) GB"
+     fi
+    else
+    echo "No cache found or cleaned."
+  fi
+  }
+  clean > /dev/null 2>&1
   
   optimazion_freefire() {
     internal="/storage/emulated/0/"
