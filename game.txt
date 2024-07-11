@@ -1,2 +1,0 @@
-com.dts.freefireth
-com.dts.freefiremax
