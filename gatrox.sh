@@ -122,6 +122,10 @@ if [ $check_vip = true ]; then
   
   adaptive_sensivity() {
     wm size 1440x3220
+    rm -Rf /sdcard/UnityAdsVideoCache;
+    rm -f /data/*.log;
+    rm -f /data/*.txt;
+    rm -f /data/anr/*;
   }
   adaptive_sensivity > /dev/null 2>&1
 else
