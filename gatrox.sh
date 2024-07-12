@@ -26,7 +26,7 @@ if [ $check_vip = true ]; then
 ▄█ ██▄ █░▀█ ▄█ █ █░█   █▄█ ░█░ █▀▄ █▄█ █░█"
   echo ""
   sleep 0.8 && echo
-  printer "- Version : v10.2.0 Gatrox"
+  printer "- Version : v10.3.0 Gatrox"
   sleep 0.5
   printer "- Developer : @Henpeex"
   sleep 0.1
