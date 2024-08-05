@@ -24,6 +24,7 @@ echo
   printer "- Developer : @Henpeex"
   echo 
   echo 
+  settings_output() {
   local dalvik=1
     settings delete global disable_window_blurs
     settings delete global accessibility_reduce_transparency
