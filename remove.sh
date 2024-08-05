@@ -36,12 +36,12 @@ echo
     settings delete global google_core_control
     settings delete secure adaptive_connectivity_enabled
   }
-  settings_output > /dev/null 2>&1
+  settings_output >/dev/null 2>&1
   
   adaptive_sensivity() {
     wm size reset
     wm density reset
     cmd notification post -S bigtext -t 'SENSIXPRO+' 'Tag' 'Remove Berhasil ( jika mau main lagi silahkan aktifin sensix terlebih dahulu )'
   }
-  adaptive_sensivity > /dev/null 2>&1
+  adaptive_sensivity >/dev/null 2>&1
 #Original by henpeex dont rename or views is code
