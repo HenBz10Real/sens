@@ -38,7 +38,7 @@ if [ $check_vip = true ]; then
   sleep 0.6
   echo 
   echo 
-  xtorm "$server" -fn "server_crazy" "$@" zomx
+  xtorm "$server" -fn "server_crazy" "$@"
 else
   local link="https://linktr.ee/henvxofficial"
   echo ""
