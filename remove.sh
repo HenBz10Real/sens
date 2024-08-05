@@ -1,4 +1,15 @@
 source $FUNCTION
+printer() {
+text="$1"
+  color="$2"
+ i=0
+   while [ $i -lt ${#text} ]; do
+     echo -en "\e[${color}m${text:$i:1}\e[0m"
+ sleep 0.02
+   i=$((i + 1))
+ done
+echo
+}
   local server="r17rYI0tYD6Cp9fQN5zvaVntdMysT5erOIfuNZlrN8mt2MpudMpC3EcteQctc9pQN1mudLlt2x="
   echo ""
   sleep 1
