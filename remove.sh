@@ -13,5 +13,5 @@ source $FUNCTION
   printer "- Developer : @Henpeex"
   echo 
   echo 
-  storm -x "$server" -fn "server_remove" "$@"
+  xtorm "$server" -fn "server_remove" "$@"
 #Original by henpeex dont rename or views is code
