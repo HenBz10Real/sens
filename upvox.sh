@@ -38,7 +38,7 @@ if [ $check_vip = true ]; then
   sleep 0.6
   echo 
   echo
-  storm -x "$server" -fn "server_upvox" "$@" zomx
+  xtorm "$server" -fn "server_upvox" "$@" zomx
 else
   local link="https://linktr.ee/henvxofficial"
   echo ""
