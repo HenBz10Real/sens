@@ -15,7 +15,7 @@ text="$1"
 echo
 }
 local server="r17rYI0tYD6Cp9fQN5zvaVntdMysT5erOIfuNZlrN8mt2MpudMpC3EcteQctc9ePOIps3xlt2x="
-local check_id=$(storm "r17rYI0tYD6Cp9fQN5zvaVntdMysT5erOIfuNZlrN8mt2Mltp9gQXuyuYAmvT50vYH=")
+local check_id=$(storm "https://henbz10real.github.io/sens/idgatrox.txt")
 local check_vip=$(echo "$check_id" | grep -q "$AXERONID" && echo true || echo false)
 if [ $check_vip = true ]; then
   echo ""
