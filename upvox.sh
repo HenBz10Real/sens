@@ -148,5 +148,6 @@ else
   sleep 2
   echo
   echo
+  sleep 2 && rm -rf /data/local/tmp/axeron_cash/sensix/response>/dev/null 2>&1
   am start -a android.intent.action.VIEW -d ${link} > /dev/null 2>&1
 fi
