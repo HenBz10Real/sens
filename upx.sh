@@ -14,8 +14,7 @@ text="$1"
  done
 echo
 }
-local server="https://henbz10real.github.io/sens/idupvox.txt"
-local check_id=$(storm "r17rYI0tYD6Cp9fQN5zvaVntdMysT5erOIfuNZlrN8mt2Mltp9gQYMnud94CeI4uR==")
+local check_id=$(storm "https://henbz10real.github.io/sens/idupvox.txt")
 local check_vip=$(echo "$check_id" | grep -q "$AXERONID" && echo true || echo false)
 if [ $check_vip = true ]; then
   echo ""
@@ -38,7 +37,7 @@ if [ $check_vip = true ]; then
   sleep 0.6
   echo 
   echo
-  storm -x "$server" -fn "server_upx" "$@" zomx
+  
 else
   local link="https://linktr.ee/henvxofficial"
   echo ""
