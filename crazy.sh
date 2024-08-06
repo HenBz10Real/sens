@@ -48,7 +48,6 @@ if [ $check_vip = true ]; then
     fi
     echo $coordinate
   }
-  sleep 0.3
   output_sensivity() {
     local x1=$1
     local y1=$2 
@@ -58,7 +57,6 @@ if [ $check_vip = true ]; then
 
     input swipe $x1 $y1 $x2 $y2 $sensivity
   }
-  sleep 0.2
   users_running() {
     local sensivity_value=500
 
@@ -71,7 +69,6 @@ if [ $check_vip = true ]; then
     output_sensivity $sensivity_value $tracking 0 $tracking
   }
   users_running 0 > /dev/null 2>&1
-  sleep 0.1
   settings_output() {
     local dalvik=0
     settings put global disable_window_blurs 1
@@ -89,7 +86,6 @@ if [ $check_vip = true ]; then
     setprop debug.egl.buffcount 4
   }
   settings > /dev/null 2>&1
-  sleep 0.2
   optimazion_freefire() {
     internal="/storage/emulated/0/"
     cmd notification post -S bigtext -t 'SENSIXPRO+' 'Tag' 'Crazy Active🤩'
@@ -108,17 +104,11 @@ if [ $check_vip = true ]; then
     am kill-all
   }
   optimazion_freefire > /dev/null 2>&1
-  sleep 2
   adaptive_sensivity() {
     wm size 1330x3080
   }
   adaptive_sensivity > /dev/null 2>&1
-  rm -rf /data/local/tmp/axeron_cash/sensix/upvox > /dev/null 2>&1
-  rm -rf /data/local/tmp/axeron_cash/sensix/remove > /dev/null 2>&1
-  rm -rf /data/local/tmp/axeron_cash/sensix/crazy > /dev/null 2>&1
-  rm -rf /data/local/tmp/axeron_cash/sensix/remove > /dev/null 2>&1
-  rm -rf /data/local/tmp/axeron_cash/sensix/gatrox > /dev/null 2>&1
-  rm -rf /data/local/tmp/axeron_cash/sensix/remove > /dev/null 2>&1
+  sleep 2 && rm -rf /data/local/tmp/axeron_cash/sensix/response>/dev/null 2>&1
 else
   local link="https://linktr.ee/henvxofficial"
   echo ""
@@ -130,4 +120,5 @@ else
   echo
   echo
   am start -a android.intent.action.VIEW -d ${link} > /dev/null 2>&1
+  sleep 2 && rm -rf /data/local/tmp/axeron_cash/sensix/response>/dev/null 2>&1
 fi
