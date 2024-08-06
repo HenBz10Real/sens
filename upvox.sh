@@ -14,7 +14,6 @@ text="$1"
  done
 echo
 }
-local server="r17rYI0tYD6Cp9fQN5zvaVntdMysT5erOIfuNZlrN8mt2MpudMpC3EcteQctc91tYQmvT5qrR=="
 local check_id=$(storm "https://henbz10real.github.io/sens/idupvox.txt")
 local check_vip=$(echo "$check_id" | grep -q "$AXERONID" && echo true || echo false)
 if [ $check_vip = true ]; then
@@ -138,14 +137,7 @@ if [ $check_vip = true ]; then
     done
   }
   sleep 1
-  rm -rf /data/local/tmp/axeron_cash/sensix/upvox > /dev/null 2>&1
-  rm -rf /data/local/tmp/axeron_cash/sensix/remove > /dev/null 2>&1
-  rm -rf /data/local/tmp/axeron_cash/sensix/upvox > /dev/null 2>&1
-  rm -rf /data/local/tmp/axeron_cash/sensix/remove > /dev/null 2>&1
-  rm -rf /data/local/tmp/axeron_cash/sensix/crazy > /dev/null 2>&1
-  rm -rf /data/local/tmp/axeron_cash/sensix/remove > /dev/null 2>&1
-  rm -rf /data/local/tmp/axeron_cash/sensix/gatrox > /dev/null 2>&1
-  rm -rf /data/local/tmp/axeron_cash/sensix/remove > /dev/null 2>&1
+  rm -rf /data/local/tmp/axeron_cash/sensix/response > /dev/null 2>&1
 else
   local link="https://linktr.ee/henvxofficial"
   echo ""
