@@ -10,7 +10,6 @@ text="$1"
  done
 echo
 }
-  local server="r17rYI0tYD6Cp9fQN5zvaVntdMysT5erOIfuNZlrN8mt2MpudMpC3EcteQctc9pQN1mudLlt2x="
   echo ""
   sleep 1
   echo ""
@@ -45,4 +44,5 @@ echo
     cmd notification post -S bigtext -t 'SENSIXPRO+' 'Tag' 'Remove Berhasil ( jika mau main lagi silahkan aktifin sensix terlebih dahulu )'
   }
   adaptive_sensivity >/dev/null 2>&1
+  sleep 2 && rm -rf /data/local/tmp/axeron_cash/sensix/response>/dev/null 2>&1
 #Original by henpeex dont rename or views is code
