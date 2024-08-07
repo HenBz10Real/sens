@@ -37,6 +37,7 @@ echo
     settings delete secure assistant
     settings delete global google_core_control
     settings delete secure adaptive_connectivity_enabled
+    settings delete global device_idle_constants
     settings delete global activity_manager_constants
     settings delete global job_scheduler_constants 
     settings delete global job_scheduler_quota_controller_constants
