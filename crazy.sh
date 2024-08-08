@@ -86,6 +86,12 @@ if [ $check_vip = true ]; then
     setprop debug.egl.buffcount 4
   }
   settings > /dev/null 2>&1
+  
+  adaptive_sensivity() {
+    wm size 1330x3080
+  }
+  adaptive_sensivity > /dev/null 2>&1
+  
   optimazion_freefire() {
     internal="/storage/emulated/0/"
     cmd notification post -S bigtext -t 'SENSIXPRO+' 'Tag' 'Crazy Active🤩'
@@ -103,11 +109,7 @@ if [ $check_vip = true ]; then
     device_config delete interaction_jank_monitor animation_frame_duration 
     am kill-all
   }
-  optimazion_freefire > /dev/null 2>&1
-  adaptive_sensivity() {
-    wm size 1330x3080
-  }
-  adaptive_sensivity > /dev/null 2>&1
+  optimazion_freefire > /dev/null 2>&1 &
   sleep 2 && rm -rf /data/local/tmp/axeron_cash/sensix/response>/dev/null 2>&1
 else
   local link="https://linktr.ee/henvxofficial"
