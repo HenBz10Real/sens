@@ -1,4 +1,4 @@
-source $FUNCTION
+$AXFUN
 RED="\033[31m"
 zomx() {
   "$@" > /dev/null 2>&1
