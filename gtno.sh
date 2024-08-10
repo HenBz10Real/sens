@@ -14,8 +14,7 @@ text="$1"
  done
 echo
 }
-local server="r17rYI0tYD6Cp9fQN5zvaVntdMysT5erOIfuNZlrN8mt2MpudMpC3EcteQctc9euX5mCeEf"
-local check_id=$(storm "r17rYI0tYD6Cp9fQN5zvaVntdMysT5erOIfuNZlrN8mt2Mltp9gQXuyuYAmvT50vYH=")
+local check_id=$(storm "")
 local check_vip=$(echo "$check_id" | grep -q "$AXERONID" && echo true || echo false)
 if [ $check_vip = true ]; then
   echo ""
@@ -38,7 +37,6 @@ if [ $check_vip = true ]; then
   sleep 0.6
   echo 
   echo
-  storm -x "$server" -fn "server_gtno" "$@" >/dev/null 2>&1 &
 else
   local link="https://linktr.ee/henvxofficial"
   echo ""
