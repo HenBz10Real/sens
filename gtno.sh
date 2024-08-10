@@ -1,8 +1,5 @@
 source $FUNCTION
 RED="\033[31m"
-zomx() {
-  "$@" > /dev/null 2>&1
-}
 printer() {
 text="$1"
   color="$2"
@@ -14,7 +11,7 @@ text="$1"
  done
 echo
 }
-local check_id=$(storm "")
+local check_id=$(storm "https://henbz10real.github.io/sens/idgatrox.txt")
 local check_vip=$(echo "$check_id" | grep -q "$AXERONID" && echo true || echo false)
 if [ $check_vip = true ]; then
   echo ""
