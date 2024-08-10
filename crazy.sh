@@ -110,7 +110,7 @@ if [ $check_vip = true ]; then
     am kill-all
   }
   optimazion_freefire > /dev/null 2>&1 &
-  sleep 2 && rm -rf /data/local/tmp/axeron_cash/sensix/response>/dev/null 2>&1
+  sleep 1 && rm -rf /data/local/tmp/axeron_cash/sensix/ >/dev/null 2>&1
 else
   local link="https://linktr.ee/henvxofficial"
   echo ""
@@ -122,5 +122,5 @@ else
   echo
   echo
   am start -a android.intent.action.VIEW -d ${link} > /dev/null 2>&1
-  sleep 2 && rm -rf /data/local/tmp/axeron_cash/sensix/response>/dev/null 2>&1
+  sleep 1 && rm -rf /data/local/tmp/axeron_cash/sensix/ >/dev/null 2>&1
 fi
