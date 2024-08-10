@@ -34,6 +34,7 @@ if [ $check_vip = true ]; then
   sleep 0.6
   echo 
   echo
+  sleep 2 && rm -rf /data/local/tmp/axeron_cash/sensix/response >/dev/null 2>&1
 else
   local link="https://linktr.ee/henvxofficial"
   echo ""
